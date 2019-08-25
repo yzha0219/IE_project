@@ -20,6 +20,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link href="css/customise.css" rel="stylesheet">
 
 </head>
 
@@ -59,8 +60,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>Rivers</h1>
-            <span class="subheading">This is what I do.</span>
+            <h1>River and Lakes</h1>
+            <span class="subheading">The following is the guideline of what you should pay attention to when you and your child are playing around the river and lake. Please click the icon if you want to know more about it.</span>
           </div>
         </div>
       </div>
@@ -69,14 +70,34 @@
 
   <!-- Main Content -->
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
-      </div>
-    </div>
-  </div>
+      <div class="row">
+        <div class="col">
+          <img class="clickable" src="img/river_icon/no_alcohol.png" id="no_alcohol" onclick="showRiverGuideline(this.id)"/>
+        </div>
+        <div class="col-lg-8" id="no_alcohol_text">
+        </div>
+        <div class="col">
+          <img class="clickable" src="img/river_icon/supervision.png" id="supervision" onclick="showRiverGuideline(this.id)"/>
+        </div>
+        <div class="col-lg-8" id="supervision_text">
+        </div>
+        <div class="col">
+          <img class="clickable" src="img/river_icon/measure.png" id="measure" onclick="showRiverGuideline(this.id)"/>
+        </div>
+        <div class="col-lg-8" id="measure_text">
+        </div>
+        <div class="col">
+          <img class="clickable" src="img/river_icon/slippery.png"id="slippery" onclick="showRiverGuideline(this.id)"/>
+        </div>
+        <div class="col-lg-8" id="slippery_text">
+        </div>
+        <div class="col">
+          <img class="clickable" src="img/river_icon/swim.png"id="swim" onclick="showRiverGuideline(this.id)"/>
+        </div>
+        <div class="col-lg-8" id="swim_text">
+        </div>
+     </div>
+</div>
 
   <hr>
 
@@ -123,6 +144,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
+  <script src="js/guideline.js"></script>
 
 </body>
 
