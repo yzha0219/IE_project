@@ -20,13 +20,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
-  <link href="css/quiz.css" rel="stylesheet">
-
-  <!-- Bootstrap quiz -->
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
+  <link href="css/customise.css" rel="stylesheet">
 
 </head>
 
@@ -66,8 +60,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>Beaches Quiz</h1>
-            <span class="subheading">The following quizs about beach safety are all single answer.</span>
+            <h1>Beaches</h1>
+            <span class="subheading">TThe following is the guideline of what you should pay attention to when you and your child are playing around the beach. Please click the icon if you want to know more about it.</span>
           </div>
         </div>
       </div>
@@ -76,79 +70,55 @@
 
   <!-- Main Content -->
   <div class="container">
-    <div class="row"><br>
-        <span class="image-position"><a href="https://www.facebook.com/meuix/?ref=settings" target="_blank">
-         <img src="https://lh4.googleusercontent.com/fLEIj3iQb7O1FhjOpLFbJtHmsMlLGmLynSWUvAP70qF0HLEBty-FANvwweg7Sv2XqSpzOKNI=w1366-h638"></a>
-      </span>
-    </div>
-    <div class="row"><br><br>
-        <div class="col-sm-8 col-sm-offset-2">
-            <div class="loader">
-                <div class="col-xs-3 col-xs-offset-5">
-                    <div id="loadbar" style="display: none;">
-                        <img src="https://8finatics.s3.amazonaws.com/static/reload_emi.gif" alt="Loading" class="center-block loanParamsLoader" style="">
-                    </div>
-                </div>
-
-                <div class="quiz" id="quiz">
-              
-                    <div class="question">
-                        <h3><span class="label label-warning" id="qid">1</span>
-                        <span id="question"> What should you check before your and children playing on the beach?</span>
-                        </h3>
-                    </div>
-                    <ul>
-                      <li>
-                        <input type="radio" id="f-option" name="selector" value="1">
-                        <label for="f-option" class="element-animation">Make sure there are lifeguards</label>
-                        <div class="check"></div>
-                      </li>
-                      
-                      <li>
-                        <input type="radio" id="s-option" name="selector" value="2">
-                        <label for="s-option" class="element-animation">If there is no sign, don't swim</label>
-                        <div class="check"><div class="inside"></div></div>
-                      </li>
-                      
-                      <li>
-                        <input type="radio" id="t-option" name="selector" value="3">
-                        <label for="t-option" class="element-animation"> Read the beach safety sign on the beach</label>
-                        <div class="check"><div class="inside"></div></div>
-                      </li>
-
-                      <li>
-                        <input type="radio" id="fo-option" name="selector" value="4">
-                        <label for="fo-option" class="element-animation">Above of them should be aware of</label>
-                        <div class="check"><div class="inside"></div></div>
-                      </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="text-muted">
-                <span id="answer"></span>
-            </div>
-            
-        </div>
-    </div>
     <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-            <div id="result-of-question" class="pulse animated" style="display: none;">
-                <span id="totalCorrect" class="pull-right"></span>
-                <table class="table table-hover table-responsive" >
-                    <thead>
-                        <tr>
-                            <th>Question No.</th>
-                            <th>Our answer</th>
-                            <th>Your answer</th>
-                            <th>Result</th>
-                        </tr>
-                    </thead>
-                    <tbody id="quizResult"></tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+      <div class="col-4">
+        <img class="clickable" src="img/beach_icon/supervision.png" id="supervision" onclick="showBeachGuideline(this.id)"/>
+      </div>
+      <div class="col-8" id="supervision_text">
+      </div>
+      <div class="col-4">
+        <img class="clickable" src="img/beach_icon//collapse.png" id="collapse" onclick="showBeachGuideline(this.id)"/>
+      </div>
+      <div class="col-8" id="collapse_text">
+      </div>
+      <div class="col-4">
+        <img class="clickable" src="img/beach_icon//sign.png" id="sign" onclick="showBeachGuideline(this.id)"/>
+      </div>
+      <div class="col-8" id="sign_text">
+      </div>
+      <div class="col-4">
+        <img class="clickable" src="img/beach_icon//patrol.png"id="patrol" onclick="showBeachGuideline(this.id)"/>
+      </div>
+      <div class="col-8" id="patrol_text">
+      </div>
+      <div class="col-4">
+        <img class="clickable" src="img/beach_icon//shark.png"id="shark" onclick="showBeachGuideline(this.id)"/>
+      </div>
+      <div class="col-8" id="shark_text">
+      </div>
+      <div class="col-4">
+        <img class="clickable" src="img/beach_icon//lifeguard.png"id="lifeguard" onclick="showBeachGuideline(this.id)"/>
+      </div>
+      <div class="col-8" id="lifeguard_text">
+      </div>
+      <div class="col-4">
+        <img class="clickable" src="img/beach_icon//sunburn.png"id="sunburn" onclick="showBeachGuideline(this.id)"/>
+      </div>
+      <div class="col-8" id="sunburn_text">
+      </div>
+      <div class="col-4">
+        <img class="clickable" src="img/beach_icon//water.png"id="water" onclick="showBeachGuideline(this.id)"/>
+      </div>
+      <div class="col-8" id="water_text">
+      </div>
+   </div>
 </div>
+
+  <hr>
+
+  <div class="clearfix">
+    <a class="btn btn-primary float-left" href="beaches_quiz.html">Start Quiz &rarr;</a>
+  </div>
 
   <hr>
 
@@ -195,7 +165,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
-  <script src="js/beach_quiz.js"></script>
+  <script src="js/guideline.js"></script>
 
 </body>
 

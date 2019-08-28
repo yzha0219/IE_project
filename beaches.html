@@ -29,7 +29,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">KID FIRST(LOGO IMG)</a>
+      <a class="navbar-brand" href="index.html"><img src="img/kidfirst.png"></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -61,7 +61,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
             <h1>Beaches</h1>
-            <span class="subheading">TThe following is the guideline of what you should pay attention to when you and your child are playing around the beach. Please click the icon if you want to know more about it.</span>
+            <span class="subheading">The following is the guideline of what you should pay attention to when you and your child are playing around the beach. Please click the icon if you want to know more about it.</span>
           </div>
         </div>
       </div>
@@ -71,53 +71,79 @@
   <!-- Main Content -->
   <div class="container">
     <div class="row">
-      <div class="col-4">
-        <img class="clickable" src="img/beach_icon/supervision.png" id="supervision" onclick="showBeachGuideline(this.id)"/>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <img src="img/beach_icon/aerial-view-of-beach-4299958_1920.jpg">
+        <div class="floorplan-wrapper">
+          <div class="markers" style="position:absolute;top:20%;right:45%;z-index:20;">
+            <span class="tooltiptext">
+              <h6>Supervision</h6>
+              <p>Supervise children within arms’ reach at the beach</p>
+            </span>
+            <a><img class="marker" alt="" src="img/beach_icon/supervision.png"></a>
+          </div>
+          <div class="markers" style="position:absolute;top:20%;right:35%;z-index:20;">
+            <span class="tooltiptext">
+              <h6>Collapse</h6>
+              <p>Do not let your children dig deep sand holes</p>
+            </span>
+            <a><img class="marker tooltip" alt="" src="img/beach_icon/collapse.png"></a>
+          </div>
+          <div class="markers" style="position:absolute;top:15%;left:30%;z-index:20;">
+            <span class="tooltiptext">
+              <h6>Sign</h6>
+              <p>- Do not swim if there is no sign</p>
+              <p>- Read beach safety signs before playing</p>
+            </span>
+            <a><img class="marker tooltip" alt="" src="img/beach_icon/sign.png"></a>
+          </div>
+          <div class="markers" style="position:absolute;top:35%;left:20%;z-index:20;">
+            <span class="tooltiptext">
+              <h6>Patrol</h6>
+              <p>- Swim between the red and yellow flags</p>
+              <p>- Swim at patrolled beaches</p>
+            </span>
+            <a><img class="marker tooltip" alt="" src="img/beach_icon/patrol.png"></a>
+          </div>
+          <div class="markers" style="position:absolute;bottom:14%;left:55%;z-index:20;">
+            <span class="tooltiptext">
+              <h6>Shark</h6>
+              <p>-Swim in designated area  if sharks may be present</p>
+            </span>
+            <a><img class="marker tooltip" alt="" src="img/beach_icon/shark.png"></a>
+          </div>
+          <div class="markers" style="position:absolute;top:14%;left:5%;z-index:20;">
+            <span class="tooltiptext">
+              <h6>Lifeguard</h6>
+              <p>- Make sure there is a lifeguard</p>
+              <p>- Ask a lifeguard for safety advice</p>
+            </span>
+            <a><img class="marker tooltip" alt="" src="img/beach_icon/lifeguard.png"></a>
+          </div>
+          <div class="markers" style="position:absolute;top:14%;right:15%;z-index:20;">
+            <span class="tooltiptext">
+              <h6>Sunburn</h6>
+              <p>Protect your kids from the sun by sunscreen</p>
+            </span>
+            <a><img class="marker tooltip" alt="" src="img/beach_icon/sunburn.png"></a>
+          </div>
+          <div class="markers" style="position:absolute;top:25%;right:25%;z-index:20;">
+            <span class="tooltiptext">
+              <h6>Water</h6>
+              <p>Drink more water to stay hydrated</p>
+            </span>
+            <a><img class="marker tooltip" alt="" src="img/beach_icon/water.png"></a>
+          </div>
+        </div>
       </div>
-      <div class="col-8" id="supervision_text">
-      </div>
-      <div class="col-4">
-        <img class="clickable" src="img/beach_icon//collapse.png" id="collapse" onclick="showBeachGuideline(this.id)"/>
-      </div>
-      <div class="col-8" id="collapse_text">
-      </div>
-      <div class="col-4">
-        <img class="clickable" src="img/beach_icon//sign.png" id="sign" onclick="showBeachGuideline(this.id)"/>
-      </div>
-      <div class="col-8" id="sign_text">
-      </div>
-      <div class="col-4">
-        <img class="clickable" src="img/beach_icon//patrol.png"id="patrol" onclick="showBeachGuideline(this.id)"/>
-      </div>
-      <div class="col-8" id="patrol_text">
-      </div>
-      <div class="col-4">
-        <img class="clickable" src="img/beach_icon//shark.png"id="shark" onclick="showBeachGuideline(this.id)"/>
-      </div>
-      <div class="col-8" id="shark_text">
-      </div>
-      <div class="col-4">
-        <img class="clickable" src="img/beach_icon//lifeguard.png"id="lifeguard" onclick="showBeachGuideline(this.id)"/>
-      </div>
-      <div class="col-8" id="lifeguard_text">
-      </div>
-      <div class="col-4">
-        <img class="clickable" src="img/beach_icon//sunburn.png"id="sunburn" onclick="showBeachGuideline(this.id)"/>
-      </div>
-      <div class="col-8" id="sunburn_text">
-      </div>
-      <div class="col-4">
-        <img class="clickable" src="img/beach_icon//water.png"id="water" onclick="showBeachGuideline(this.id)"/>
-      </div>
-      <div class="col-8" id="water_text">
-      </div>
-   </div>
-</div>
+    </div>
+  </div>
 
   <hr>
-
-  <div class="clearfix">
-    <a class="btn btn-primary float-left" href="beaches_quiz.html">Start Quiz &rarr;</a>
+  <div class="row">
+    <div class="col-8"></div>
+    <div class="clearfix col-4">
+     <a class="btn btn-primary float-left" href="beaches_quiz.html">Start Quiz &rarr;</a>
+    </div>
   </div>
 
   <hr>

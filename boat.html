@@ -29,7 +29,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">KID FIRST(LOGO IMG)</a>
+      <a class="navbar-brand" href="index.html"><img src="img/kidfirst.png"></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -70,40 +70,66 @@
 
   <!-- Main Content -->
   <div class="container">
-          <div class="row">
-            <div class="col-4">
-              <img class="clickable" src="img/boat_icon/no_alcohol.png" id="no_alcohol" onclick="showBoatGuideline(this.id)"/>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <img src="img/boat_icon/WechatIMG925.jpeg">
+          <div class="floorplan-wrapper">
+            <div class="markers" style="position:absolute;bottom:40%;left:45%;z-index:20;">
+              <span class="tooltiptext">
+                <h6>DO NOT DRINK</h6>
+                <p>- Drinking alcohol may cause accidents such as falling and drownings from the boat</p>
+                <p>- Boat driver should not be drinking alcohol when driving </p>
+              </span>
+              <a><img class="marker" alt="" src="img/boat_icon/no_alcohol.png"></a>
             </div>
-            <div class="col-8" id="no_alcohol_text">
+            <div class="markers" style="position:absolute;top:15%;left:30%;z-index:20;">
+              <span class="tooltiptext">
+                <h6>CHECK the WEATHER and WATER CONDITION</h6>
+                <p>- Avoid bad weather condition while out for water activities</p>
+                <p>- Make sure to check weather forecst before and during activities</p>
+              </span>
+              <a><img class="marker tooltip" alt="" src="img/boat_icon/weather.png"></a>
             </div>
-            <div class="col-4">
-              <img class="clickable" src="img/boat_icon/weather.png" id="weather" onclick="showBoatGuideline(this.id)"/>
+            <div class="markers" style="position:absolute;bottom:25%;right:30%;z-index:20;">
+              <span class="tooltiptext">
+                <h6>WEAR FLOTATION DEVICE</h6>
+                <p>- Ensure all people on board wear LIFE JACKETS</p>
+                <p>- Need to be properly fitted to be used effectively</p>
+              </span>
+              <a><img class="marker tooltip" alt="" src="img/boat_icon/flotation.png"></a>
             </div>
-            <div class="col-8" id="weather_text">
+            <div class="markers" style="position:absolute;bottom:40%;left:35%;z-index:20;">
+              <span class="tooltiptext">
+                <h6>LET PEOPLE KNOW</h6>
+                <p>- Always let people know WHERE you are going and WHEN you will be back</p>
+                <p>- Send photos of a boat you are riding to people around you</p>
+                <p>- FULLY charge your phone battery</p>
+              </span>
+              <a><img class="marker tooltip" alt="" src="img/boat_icon/inform.png"></a>
             </div>
-            <div class="col-4">
-              <img class="clickable" src="img/boat_icon/flotation.png" id="flotation" onclick="showBoatGuideline(this.id)"/>
+            <div class="markers" style="position:absolute;bottom:40%;right:45%;z-index:20;">
+              <span class="tooltiptext">
+                <h6>REMEMBER to get HELP</h6>
+                <p>- CALL 000 on the phone</p>
+                <p>- Marine Radio</p>
+                <p>VHF : Ch 16 or VHF :Distress button</p>
+                <p>- Activate flare when you are in danger and see any rescuers</p>
+              </span>
+              <a><img class="marker tooltip" alt="" src="img/boat_icon/000.png"></a>
             </div>
-            <div class="col-8" id="flotation_text">
-            </div>
-            <div class="col-4">
-              <img class="clickable" src="img/boat_icon/inform.png"id="inform" onclick="showBoatGuideline(this.id)"/>
-            </div>
-            <div class="col-8" id="inform_text">
-            </div>
-            <div class="col-4">
-              <img class="clickable" src="img/boat_icon/000.png"id="000" onclick="showBoatGuideline(this.id)"/>
-            </div>
-            <div class="col-8" id="000_text">
-            </div>
-         </div>
-  </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <hr>
   
-  <div class="clearfix">
-    <a class="btn btn-primary float-left" href="#">Start Quiz &rarr;</a>
-  </div>
+  <div class="row">
+      <div class="col-8"></div>
+      <div class="clearfix col-4">
+       <a class="btn btn-primary float-left" href="boat_quiz.html">Start Quiz &rarr;</a>
+      </div>
+    </div>
 
   <hr>
 

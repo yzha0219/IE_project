@@ -15,3 +15,77 @@
 	border-width:4px 3px 3px 4px;
 	color:#000;
 }
+
+.marker {
+	width: 33px;
+	height: 33px;
+	display: block;
+}
+.floorplan-wrapper .markers a .marker {
+	position: absolute;
+	opacity: 1;
+	-moz-transition: all 0.25s ease;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	display: block;
+	width: 66px;
+	height: 66px;
+	margin: auto;
+	z-index: 2;
+}
+.floorplan-wrapper .markers a .marker-hover {
+	position: absolute;
+	opacity: 0;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	display: block;
+	width: 33px;
+	margin: auto;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+  }
+  
+.floorplan-wrapper .markers .tooltiptext {
+	visibility: hidden;
+	width: 450px;
+	height: 120px;
+	background-color: white;
+	color: rgb(255, 60, 60);
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -60px;
+  }
+
+  .floorplan-wrapper .markers .tooltiptext p{
+	font-size: 15px;
+	margin:0;
+	padding: 0;
+	color: black;
+  }
+  
+.floorplan-wrapper .markers .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+  }
+  
+.floorplan-wrapper .markers:hover .tooltiptext {
+	visibility: visible;
+  }
